@@ -1,0 +1,82 @@
+@lt-gray: #ddd;
+@backgroung-pale:#D1C4E9;
+@backgroung-dark:#512DA8;
+@backgroung-light:#9575cd;
+
+@carousel-item-height: 350px;
+
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+    margin: 0px auto;
+    padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+ .zero-margin()
+}
+
+.row-content {
+    .zero-margin(50px,0px);
+    border-bottom: 4px ridge;
+    min-height: 350px;
+}
+
+.footer {
+    background-color: @backgroung-pale;
+    .zero-margin(20px,0px);
+}
+
+.jumbotron {
+    .zero-margin(70px,30px);
+    background: @backgroung-light;
+    color:floralwhite;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #3a3838;
+}
+
+body {
+    padding: 50px 0 0 0;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: @backgroung-dark;
+}
+
+.tab-content {
+    border-right: 1px solid @lt-gray;
+    border-left: 1px solid @lt-gray;
+    border-bottom: 1px solid @lt-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background: @backgroung-dark;
+
+    .carousel-item {
+        height: @carousel-item-height;
+
+        img {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            min-height: 300px;
+        }
+
+        h3 {
+            color: white;
+            position: absolute;
+            padding: 5px;
+        }
+    }
+}
+
+#carousel_button {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
