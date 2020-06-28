@@ -1,4 +1,5 @@
- // Assignment 4 Task 2
+
+// Assignment 4 Task 2
  $("#reserve_table_input").click(function () {
     $('#reserve_table').modal('toggle');
 });
